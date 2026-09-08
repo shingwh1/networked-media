@@ -1,0 +1,91 @@
+<!-- html is parent, head and body are children of html (ctrl slash to comment) -->
+<!-- ident = child of the above -->
+<!-- title is a grandchild of html -->
+<!-- right click -> format doc: prettier collapses stuff and fixes spacing -->
+<!-- or option + shift + f -->
+
+<!-- body holds all content on webpage -->
+<!-- hyper text markup language  -->
+<!-- writing text, saying what text it is -->
+<!-- holds content H1,  -->
+
+<!-- strong, emphasis, a, span, code  are inline tags -->
+<!-- inline tags stacked horizontally -->
+<!-- they stack horizontally vs Paragraph which stacks vertically -->
+<!-- block elements stacked vertically -->
+<!-- headers, paragraphs -->
+
+<html>
+  <head>
+    <title>class 2</title>
+  </head>
+  <body>
+    <!-- save file -> refresh browser: to see what we did -->
+    this is some text and is untagged browser renders this as one line even if
+    multiple in editor
+    <!-- our first tag, classifies text as "header" -->
+
+    <!-- these are blocks -->
+    <h1>HEADER</h1>
+    <p>this is a normal paragraph</p>
+    <p>this has <em>italics</em></p>
+    <!-- we can nest tags in other tags -->
+
+    <!-- these are inline elements -->
+    <strong>this is bolded but no <\p></strong>
+    <em>this is an entire italic sentence</em>
+
+    <!-- generic type of element -->
+    <div>
+      <!-- dividing element -->
+      <!-- used as a layer or to group content -->
+      <!-- if you want things to have same styles or be similar structurally -->
+      <p>this paragraph is in a div</p>
+      <p>these paragraphs are all in a group together</p>
+    </div>
+    <!-- this is a self enclosing tag -->
+    <!-- this tag does not have any content -->
+    <hr />
+    <!-- generic inline element -->
+    <!-- used specifically for styling -->
+    <span>hi</span>
+    <span>hello</span>
+    <span>greetings</span>
+    <p>
+      maybe in the future, this
+      <span>word</span>
+      will be red
+    </p>
+    <!-- attribute -->
+    <!-- no content in image tag -->
+    <!-- use exact name of file including CAPITAL letters -->
+    <img src="wooper.jpeg" />
+    <!-- above image is broken because there is no wooper in 
+      class 2 folder, so we have to tell it to look in the images
+      folder -->
+    <img src="images/wooper.jpeg" />
+    <!-- image is also self enclosing -->
+    <!-- don't resize image image in code, use external image editor
+      -- bigger image = longer load times -->
+    <img
+      src="https://img.pokemondb.net/sprites/home/normal/2x/wooper-paldean.jpg"
+    />
+    <!-- you can also use url of image on web if dont 
+     want to download -->
+    <p>
+      <a href="page2.html">go to <em>page 2</em></a>
+    </p>
+
+    <!-- [break] self enclosing tag that forces a new line -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <a href="page2.html">
+      <!-- you can  put images in links -->
+      <img
+        src="https://marriland.com/wp-content/plugins/marriland-core/images/pokemon/sprites/home/256/quagsire.png"
+      />
+    </a>
+  </body>
+</html>
