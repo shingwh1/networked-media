@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body.text-page {
+  padding: 2rem;
+}
+
+p,
+li {
+  max-width: 400px;
+  font-family: "Garamond", serif;
+  font-size: 1.2em;
+}
+
+.image-container {
+  width: 100%;
+  margin: 0 auto;
+  pointer-events: auto;
+  position: relative; /* I'm still not quite sure about the relationship between 
+  the relative big img container class and the absolute positioning in the more specific classes for the images*/
+
+  /* is there a more efficient way to do this kind of positioning of all the images? */
+}
+
+.bg-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-smiski {
+  position: absolute;
+  top: 49%;
+  left: 32%;
+  width: 6%;
+}
+
+.img-laptop {
+  position: absolute;
+  top: 49%;
+  left: 28%;
+  width: 6%;
+  transform: scaleX(-1);
+  z-index: 10;
+}
+
+.img-monitor {
+  position: absolute;
+  top: 48%;
+  left: 21%;
+  width: 9%;
+}
+
+.img-pencil {
+  position: absolute;
+  top: 55%;
+  left: 26%;
+  width: 4%;
+}
+
+.img-plane {
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  width: 15%;
+}
+
+.img-skyline {
+  position: absolute;
+  top: 29.5%;
+  left: 7%;
+  width: 25%;
+  transform: rotate(-4deg);
+}
+
+.img-fox {
+  position: absolute;
+  top: 59%;
+  left: 10%;
+  width: 10%;
+}
+
+.img-penguin {
+  position: absolute;
+  top: 73%;
+  left: 5%;
+  width: 8%;
+}
+
+.img-rowlet {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  width: 12%;
+}
+
+.img-glassAnimals {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 10%;
+}
+
+.img-fish {
+  position: absolute;
+  top: 16%;
+  left: 63%;
+  width: 8%;
+}
+
+.img-books {
+  position: absolute;
+  top: 12%;
+  left: 68%;
+  width: 8%;
+  z-index: 2;
+}
+
+.img-frisbee {
+  position: absolute;
+  top: 9%;
+  left: 71%;
+  width: 12%;
+  z-index: 3;
+}
+
+.img-cleat {
+  position: absolute;
+  top: 10%;
+  left: 78%;
+  width: 11%;
+  z-index: 4;
+}
+
+.img-porygon {
+  position: absolute;
+  top: 11%;
+  left: 84%;
+  width: 8%;
+  z-index: 5;
+}
+
+.img-hk {
+  position: absolute;
+  top: 35%;
+  left: 49%;
+  width: 12%;
+}
+
+.img-lights {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 35%;
+}
+
+.img-lantern {
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  width: 12%;
+}
+
+.img-lantern2 {
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  width: 18%;
+}
+
+.img-stars {
+  position: absolute;
+  top: -20%;
+  left: 65%;
+  width: 25%;
+  z-index: 10;
+}
+
+.img-bed {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 30%;
+  transform: scaleX(-1);
+  z-index: 10;
+}
+
+.img-chair {
+  position: absolute;
+  top: 48%;
+  left: 40%;
+  width: 12%;
+  z-index: 12;
+}
+
+.img-carpet {
+  position: absolute;
+  top: 55%;
+  left: 48%;
+  width: 35%;
+  z-index: 5;
+}
+
+.img-skiboot {
+  position: absolute;
+  top: 20%;
+  left: 63%;
+  width: 8%;
+  z-index: 0;
+}
+
+.img-ukulele {
+  position: absolute;
+  top: 18%;
+  left: 68%;
+  width: 12%;
+  z-index: 2;
+  transform: rotate(-45deg);
+}
+
+.img-tablet {
+  position: absolute;
+  top: 23%;
+  left: 78%;
+  width: 8%;
+  z-index: 3;
+}
+
+.img-globe {
+  position: absolute;
+  top: 23%;
+  left: 85%;
+  width: 7%;
+  z-index: 3;
+}
+.img-skis {
+  position: absolute;
+  top: 38%;
+  left: 83%;
+  width: 15%;
+  z-index: 5;
+}
