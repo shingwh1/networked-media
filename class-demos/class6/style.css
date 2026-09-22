@@ -1,0 +1,30 @@
+/* Q: What is p when defining a rule in CSS? */
+/* A: the selector; it applies to everything within <p> tags */
+/* what the style apply to */
+
+p {
+  /* Q: What is the property that manipulates the horizontal size of the block? Write that property and give it a value of 60%*/
+  /* max-width: 60%; */
+  width: 60%;
+  /* block = vertical aligned */
+  /* Q: What are the other units of measurement we use in CSS? */
+  /* A: percentage, pixels, em, rem, keyword values, global values */
+}
+
+/* To be completed as a class together: */
+/* Select "blue" class */
+
+/* .classname -> syntax for class name */
+/* you can apply classes to multiple classes in a page */
+.blue {
+  background-color: blue;
+}
+
+/* Select "main" id */
+
+/* #idname */
+/* can only be used once  */
+/* why would you use an id when you could create a unique class? */
+#main {
+  border: 2px solid red;
+}
