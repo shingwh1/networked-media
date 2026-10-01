@@ -1,0 +1,15 @@
+/* good practice for every webpage ever */
+body {
+  height: 100%;
+  width: 100%;
+  /* remove margin for overflow scrolling */
+  margin: 0;
+}
+
+#text {
+  width: 500px;
+  height: 500px;
+  background-color: cyan;
+  margin-top: 40px;
+  margin-left: 100px;
+}
