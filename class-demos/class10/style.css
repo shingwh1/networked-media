@@ -1,0 +1,49 @@
+/* multiple selctor using comma */
+html,
+body {
+  width: 100vw;
+  /* viewport width = vw; viewport heigh =vh */
+  height: 100vh;
+  /* removing scroll */
+  /* overflow: hidden; */
+  /* if I want to see the entire border  */
+  margin: 0;
+  /* change calc to use border box to include margin, border, padding, not just content */
+  /* border box also gets rid of the scroll */
+  box-sizing: border-box;
+}
+
+/* separate selector for just body */
+body {
+  border: 10px solid red;
+  padding: 10px;
+}
+
+.parent {
+  background-color: orange;
+  position: relative;
+}
+
+/* if parent div has no z-index, children can go under it */
+
+.child {
+  background-color: yellow;
+  position: absolute;
+  /* now the div only fits the width of the content */
+  /* margin from the top of relative element */
+  /* relative to parent div */
+  top: 0;
+  right: 33%;
+  z-index: -1;
+}
+
+.child2 {
+  background-color: blue;
+  position: absolute;
+  /* now the div only fits the width of the content */
+  /* margin from the top of relative element */
+  /* relative to parent div */
+  top: 0;
+  right: 50%;
+  z-index: 1;
+}
