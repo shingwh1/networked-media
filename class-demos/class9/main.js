@@ -27,7 +27,7 @@ window.onload = () => {
     textDiv.textContent += e.key;
 
     if (e.key == " ") {
-      textDiv.textContent += "!";
+      textDiv.textContent += "!"; //e.which or e.code for specific characters
     }
   });
 };
