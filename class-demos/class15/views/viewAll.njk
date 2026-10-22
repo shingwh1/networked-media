@@ -1,0 +1,22 @@
+{%include "partial-nav.njk" %}
+
+{# in order to access server data, w eneed to use the variable we passed in server.js 
+for render of view-all.njk #}
+{# messagesArrayFromServer #}
+
+{%for singleMessage in messagesArrayFromServer %}
+{# it goes through entire array, we can write html repeated with this data #}
+<p>
+    <span>user:</span>
+    <span>{{singleMessage.user}}</span>
+    {# if your server restarts, it will wipe #}
+
+</p>
+
+<p>
+    <span>message:</span>
+    <span>{{singleMessage.message}}</span>
+
+</p>
+
+{%endfor %}

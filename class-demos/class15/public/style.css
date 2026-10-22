@@ -1,0 +1,9 @@
+nav {
+  background-color: CornflowerBlue;
+}
+
+/* a:visited for clicked links */
+a,
+a:visited {
+  color: Cornsilk;
+}

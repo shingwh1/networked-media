@@ -1,0 +1,15 @@
+{# form sends data via a POST request to server #}
+{# to send data to server, we need attributes in form #}
+{# attributes: method, action #}
+{# method -> what type of http request we are making? always POST for forms #}
+{# action is the route that will handle the data on the server #}
+{# for every form, html with a method & action, we need a app.post in the server.js #}
+<form action="/send-message" method="POST">
+    {# inputs are the data to be sent #}
+    {# in order to process the data, we need to include the name attribute which will name the property in the reqeust.body #}
+    <input type="text" placeholder="name" name="user">
+    {# name is the name of the property we access on the server side #}
+    <input type="text" placeholder="write a message" name="message">
+    {# always include a submit button #}
+    <input type="submit" value="send message">
+</form>
