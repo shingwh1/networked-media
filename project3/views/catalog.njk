@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Catalog</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/frisbee_Icon.png" />
+</head>
+
+<body>
+    {%include "partial-nav.njk" %}
+    <div class="main-container">
+        <h1>Cleat Catalog</h1>
+        <div class="product-grid">
+
+            {% for product in products %}
+            <a href="/catalog/{{ product.id }}" class="product-card">
+                <div class="image-wrapper">
+                    <img src="{{ product.image }}" alt="{{ product.name }}">
+                </div>
+                <div class="product-info">
+                    <h2>{{ product.name }}</h2>
+                    <p>{{product.brand}}</p>
+
+                    <p class="price">${{ product.price }}</p>
+                </div>
+
+            </a>
+            {% endfor %}
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

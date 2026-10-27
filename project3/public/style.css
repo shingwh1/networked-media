@@ -1,0 +1,236 @@
+* {
+  font-family: "Inter", sans-serif;
+  color: #333333;
+}
+
+#paragraph {
+  max-width: 600px;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  font-weight: thin;
+  padding-top: 0.5%;
+  padding-left: 0.5%;
+  z-index: 100;
+  position: sticky;
+}
+
+a,
+a:visited {
+  color: #333333;
+  text-decoration: none;
+}
+
+.main-container {
+  padding-top: 1%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  margin-bottom: 10%;
+}
+
+.hero-container {
+  padding-top: 10%;
+  padding-left: 0.5%;
+  text-align: center;
+  position: relative;
+  margin: 15px;
+}
+
+#nike-tiempo-image {
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  width: 25%;
+  z-index: 1;
+}
+
+#nb-freeze4-image {
+  position: absolute;
+  top: -30%;
+  left: 25%;
+  width: 25%;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+#ida-image {
+  position: absolute;
+  top: -25%;
+  left: 52%;
+  width: 23%;
+  z-index: 2;
+}
+
+#adizero-image {
+  position: absolute;
+  top: 88%;
+  left: 55%;
+  width: 22%;
+  z-index: -10;
+  transform: scaleX(-1);
+}
+
+#nb-freeze5-image {
+  position: absolute;
+  top: 15%;
+  left: 72%;
+  width: 25%;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+#nb-burn-image {
+  position: absolute;
+  top: 75%;
+  left: 22%;
+  width: 25%;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+#hero-title {
+  font-size: 6em;
+}
+
+/* catalog grid */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product Details */
+.product-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.product-info h3 {
+  font-size: 1.1rem;
+}
+
+.product-image {
+  max-width: 20vw;
+}
+
+.price {
+  font-weight: thin;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.product-info h2,
+.product-info p {
+  margin: 0;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* adjust to taste */
+}
+
+/* product detail page catalog */
+.product-main-container {
+  padding-top: 1%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  margin-bottom: 2%;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: top;
+  justify-content: left;
+  vertical-align: middle;
+
+  max-width: 1000px;
+  /* background-color: blue; */
+}
+
+.product-image-group {
+  width: fill;
+  height: auto;
+}
+
+.product-text-group {
+  padding-left: 10%;
+  width: 80%;
+}
+
+/* product comments */
+
+.experience-comment {
+  border-left: 3px solid #ccc;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+
+.experience-comment h3,
+.experience-comment p {
+  margin: 0;
+}
+
+.experience-comment h3 {
+  font-size: 1rem;
+  /* margin-bottom: 4px; */
+}
+
+.experiences {
+  /* background-color: red; */
+}
+
+/* Button */
+.button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+/* form */
+.experience-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 600px;
+}
+
+.form-fullwidth {
+  grid-column: 1 / -1;
+}

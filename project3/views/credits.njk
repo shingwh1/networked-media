@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Credits</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/frisbee_Icon.png" />
+</head>
+
+<body>
+    {%include "partial-nav.njk" %}
+
+
+    <div class="main-container">
+        <h1>Credits</h1>
+        <p>Thanks to everyone who has contributed to this project so far ᯓ಄</p>
+        <h1>Contributers</h1>
+
+        {%for singleMessage in messagesArrayFromServer %}
+        <p>
+            <span>{{singleMessage.user}}</span> <span>({{singleMessage.location}})</span>
+        </p>
+        {%endfor %}
+    </div>
+
+</body>
+
+</html>

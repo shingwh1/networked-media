@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Add your experience!</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/frisbee_Icon.png" />
+</head>
+
+<body>
+    {%include "partial-nav.njk" %}
+    <div class="main-container">
+        <h1>Submit your experience</h1>
+        <p>Tell us about your frisbee experience with your cleats! 🥏</p>
+
+        <form action="/send-message" method="POST" class="experience-form">
+            {# inputs are the data to be sent #}
+            {# in order to process the data, we need to include the name attribute which will name the property in the reqeust.body #}
+            <input type="text" placeholder="Name" name="user">
+            <input type="text" placeholder="Country" name="location">
+            {# name is the name of the property we access on the server side #}
+
+            <select name="productId" required>
+
+                <option value="">Choose a cleat</option>
+                {% for product in products %}
+
+                <option value="{{ product.id }}">{{ product.name }}</option>
+                {% endfor %}
+
+            </select>
+
+
+            <textArea placeholder="Your experience" name="experience" class="form-fullwidth" rows="10"></textArea>
+            {# always include a submit button #}
+            <input type="submit" value="send message" class="form-fullwidth">
+        </form>
+
+    </div>
+</body>
+
+</html>
