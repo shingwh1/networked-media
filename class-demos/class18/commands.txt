@@ -1,0 +1,2 @@
+npm init -y (set up server)
+npm install masto dotenv (masto lets us talk to mastodon, dotenv hides passwords from GitHub)
