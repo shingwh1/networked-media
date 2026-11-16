@@ -1,0 +1,21 @@
+form {
+  display: flex;
+  /* flex allows width and height to be adjustable automatically */
+  /* autommatically sizes child elements within parent to the same width/height */
+
+  flex-direction: column;
+  /* change display to column */
+
+  /* flex-grow does proportion calc */
+  flex-grow: 2;
+}
+
+.left,
+.right {
+  /* compares with other children in flex container */
+  flex-grow: 1;
+}
+
+body {
+  display: flex;
+}

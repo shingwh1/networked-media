@@ -1,0 +1,28 @@
+take 5 minutes to quietly write down what you think makes good moderation
+what is required of users? what is required of maintainers/admins?
+    - users have to be mindful of what they say to others
+    - maintainers should communicate with affected parties before making any executive decision
+    - maintainers should be active members of the community
+
+
+where are examples of what you see as active / passive moderation?
+-> moderator has to actively do 
+
+- Active: Removing sensitive content (gore, violence, death)
+- Active: Commentary youtubers???
+- Passive: Being able to only like content (is it good? idk?)
+- Passive: Censoring content with certain words (hate speech, slurs)
+- Passive: having to meet conditions before joining community
+
+robots.txt can help with whether websites show up on google, or not to scrapers
+
+rules:
+
+
+- env include token
+- in bot.js, add API request (view class 20 code)
+- any manipulations based on data received will be in bot.js
+- everything else except bot.js should be the same
+- uploading is annoying -> we have to upload node.js in droplet (step by step in class 18 notes)
+    - tells u exactly what to do wahoo
+- all instructions in class 20 starter code

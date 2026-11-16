@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>hunger games sim</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="left"></section>
+    <form method="POST" action="/add-data">
+        <input type="text" name="studentName" placeholder="add a name" required>
+        {# we can add more input fields if we want to #}
+        <input type="text" name="action" placeholder="add the player action" required>
+        <input type="number" name="count" placeholder="number of tributes in action" required>
+        <input type="text" name="location" placeholder="where did this happen?" required>
+
+        <input type="submit" value="send data">
+    </form>
+    <section class="right"></section>
+</body>
+
+</html>
