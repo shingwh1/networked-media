@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-11-19T20:12:20.091Z",
+  "source": {
+    "repo": "samheckle/networked-media-fa-26",
+    "ref": "main",
+    "path": "class_23/class_23_starter"
+  },
+  "mode": "scan_and_download",
+  "rescueMode": false,
+  "part": null,
+  "manifestScope": "download",
+  "lfsPointers": [],
+  "submodules": [],
+  "failedPaths": [],
+  "scanWarnings": [],
+  "filesTotal": 6
+}
