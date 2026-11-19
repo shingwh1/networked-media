@@ -6,7 +6,7 @@ let nedb = require("@seald-io/nedb");
 
 const app = express();
 let database = new nedb({
-  filename: "mydatabase.db",
+  filename: "lisadatabase.db",
   autoload: true,
 });
 
@@ -26,10 +26,10 @@ app.get("/", (req, res) => {
 app.post("/add-data", (req, res) => {
   let dataToBeAdded = {
     //if you want extra data to be stored, you have to add them to the object
-    name: req.body.studentName,
-    action: req.body.action,
-    number: req.body.count,
-    location: req.body.location,
+    name: req.body.passengerName,
+    thought: req.body.thought,
+    mood: req.body.mood,
+    weather: req.body.weather,
     timestamp: Date.now(),
   };
   //if u wanna delete shit just delete it in the .db file
