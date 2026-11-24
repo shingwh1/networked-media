@@ -1,0 +1,35 @@
+{# the other pages follow this structure #}
+{# this was home.njk in class23 #}
+{# made it a layout template #}
+<html>
+
+<head>
+  {# block is placeholder to inject some html depending on the page #}
+  {# insert blocks to whatever uses the base layout #}
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="style.css" />
+  {%block extraStylesheet %} {% endblock %}
+
+</head>
+
+<body>
+  <section></section>
+  <main>
+    <nav>
+      Page Visits: {{ serverData }}
+      <div class="links">
+        <a href="/">home</a>
+        <a href="/about">about</a>
+        <div>
+          <a href="/login">login</a> /
+          <a href="/signup">signup</a>
+        </div>
+      </div>
+    </nav>
+    {% block content %} {% endblock %}
+
+  </main>
+  <section></section>
+</body>
+
+</html>

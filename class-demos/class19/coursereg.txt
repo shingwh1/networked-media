@@ -1,0 +1,4 @@
+Recommended Classes:
+- DILP -> Desktop live performance
+- 3D in the Web (threejs class)
+- live web 
